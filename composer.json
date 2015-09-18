@@ -1,5 +1,5 @@
 {
-  "name": "richardpq/oauth-client",
+  "name": "richardpq/oauth2-client",
   "description": "Oauth2 Client",
   "keywords": ["oauth", "oauth2"],
   "minimum-stability": "stable",

@@ -3,3 +3,4 @@
 app/reports/coverage/*
 composer.phar
 vendor/
+composer.lock

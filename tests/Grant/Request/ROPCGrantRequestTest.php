@@ -1,18 +1,17 @@
 <?php
 
-namespace Tests\AuthorizationGrant;
+namespace RichardPQ\OAuth2\Client\Tests\Request;
 
-use AuthorizationGrant\Request\ROPCGrantRequest;
+use RichardPQ\OAuth2\Client\Grant\Request\ROPCGrantRequest;
 
 class ROPCGrantRequestTest extends \PHPUnit_Framework_TestCase
 {
     public function testExtendsFromAbstractRequest()
     {
-        $this->assertInstanceOf("AuthorizationGrant\\Request\\AbstractGrantRequest", new ROPCGrantRequest([
-            'grant_type' => 'gt',
-            'username' => 'usr',
-            'password' => 'pwd'
-        ]));
+        $this->assertInstanceOf(
+            "RichardPQ\\OAuth2\\Client\\Grant\\Request\\AbstractGrantRequest",
+            new ROPCGrantRequest(['grant_type' => 'gt', 'username' => 'usr', 'password' => 'pwd'])
+        );
     }
 
     /**

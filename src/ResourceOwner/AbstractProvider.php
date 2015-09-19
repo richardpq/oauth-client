@@ -2,7 +2,7 @@
 
 namespace Provider;
 
-abstract class AbstractProvider
+abstract class AbstractResource
 {
     abstract protected function getAuthorizationURL();
     abstract protected function getAccessTokenUrl();

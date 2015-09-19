@@ -1,17 +1,17 @@
 <?php
 
-namespace Tests\AuthorizationGrant;
+namespace RichardPQ\OAuth2\Client\Tests\Request;
 
-use AuthorizationGrant\Request\RedirectionBasedRequest;
+use RichardPQ\OAuth2\Client\Grant\Request\RedirectionBasedRequest;
 
 class RedirectionBasedRequestTest extends \PHPUnit_Framework_TestCase
 {
     public function testExtendsFromAbstractRequest()
     {
-        $this->assertInstanceOf("AuthorizationGrant\\Request\\AbstractGrantRequest", new RedirectionBasedRequest([
-            'response_type' => 'resp',
-            'client_id' => 'id'
-        ]));
+        $this->assertInstanceOf(
+            "RichardPQ\\OAuth2\\Client\\Grant\\Request\\AbstractGrantRequest",
+            new RedirectionBasedRequest(['response_type' => 'resp','client_id' => 'id'])
+        );
     }
 
     /**

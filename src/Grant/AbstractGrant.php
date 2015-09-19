@@ -1,6 +1,6 @@
 <?php
 
-namespace AuthorizationGrant;
+namespace RichardPQ\OAuth2\Client\Grant;
 
 abstract class AbstractGrant
 {

@@ -1,20 +1,23 @@
 <?php
 
-namespace Tests\AuthorizationGrant\Request;
+namespace RichardPQ\OAuth2\Client\Tests\Request;
 
-use AuthorizationGrant\Request\TokenGrantRequest;
+use RichardPQ\OAuth2\Client\Grant\Request\TokenGrantRequest;
 
 class TokenGrantRequestTest extends \PHPUnit_Framework_TestCase
 {
     public function testExtendsFromAbstractRequest()
     {
-        $this->assertInstanceOf("AuthorizationGrant\\Request\\AbstractGrantRequest", new TokenGrantRequest([
-            'client_id' => 'ci',
-            'client_secret' => 'cs',
-            'grant_type' => 'gt',
-            'code' => 'cod',
-            'redirect_uri' => 'ru'
-        ]));
+        $this->assertInstanceOf(
+            "RichardPQ\\OAuth2\\Client\\Grant\\Request\\AbstractGrantRequest",
+            new TokenGrantRequest([
+                'client_id' => 'ci',
+                'client_secret' => 'cs',
+                'grant_type' => 'gt',
+                'code' => 'cod',
+                'redirect_uri' => 'ru'
+            ])
+        );
     }
 
     /**

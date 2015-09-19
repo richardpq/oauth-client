@@ -1,8 +1,6 @@
 <?php
 
-namespace Token;
-
-use Token\AbstractToken;
+namespace RichardPQ\OAuth2\Client\Token;
 
 class AccessToken extends AbstractToken
 {

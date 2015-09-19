@@ -1,9 +1,9 @@
 <?php
 
-namespace AuthorizationGrant\Response;
+namespace RichardPQ\OAuth2\Client\Grant\Response;
 
-use Tools\RequiredParametersTrait;
-use Tools\ParameterizedTrait;
+use RichardPQ\OAuth2\Client\Tools\RequiredParametersTrait;
+use RichardPQ\OAuth2\Client\Tools\ParameterizedTrait;
 
 class AuthorizationResponse
 {

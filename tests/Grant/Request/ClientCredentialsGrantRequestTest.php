@@ -1,16 +1,17 @@
 <?php
 
-namespace Tests\AuthorizationGrant\Request;
+namespace RichardPQ\OAuth2\Client\Tests\Request;
 
-use AuthorizationGrant\Request\ClientCredentialsGrantRequest;
+use RichardPQ\OAuth2\Client\Grant\Request\ClientCredentialsGrantRequest;
 
 class ClientCredentialsGrantRequestTest extends \PHPUnit_Framework_TestCase
 {
     public function testExtendsFromAbstractRequest()
     {
-        $this->assertInstanceOf("AuthorizationGrant\\Request\\AbstractGrantRequest", new ClientCredentialsGrantRequest([
-            'grant_type' => 'gt'
-        ]));
+        $this->assertInstanceOf(
+            "RichardPQ\\OAuth2\\Client\\Grant\\Request\\AbstractGrantRequest",
+            new ClientCredentialsGrantRequest(['grant_type' => 'gt'])
+        );
     }
 
     /**

@@ -2,11 +2,11 @@
 
 namespace AuthorizationGrant;
 
-use AuthorizationGrant\Request\RedirectionBasedRequest;
-use AuthorizationGrant\Request\TokenGrantRequest;
-use AuthorizationGrant\Response\AuthorizationResponse;
-use Token\AccessToken;
-use Token\RefreshToken;
+use RichardPQ\OAuth2\Client\Grant\Request\RedirectionBasedRequest;
+use RichardPQ\OAuth2\Client\Grant\Request\TokenGrantRequest;
+use RichardPQ\OAuth2\Client\Grant\Response\AuthorizationResponse;
+use RichardPQ\OAuth2\Client\Token\AccessToken;
+use RichardPQ\OAuth2\Client\Token\RefreshToken;
 
 class AuthorizationCodeGrant
 {

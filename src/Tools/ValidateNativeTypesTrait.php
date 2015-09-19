@@ -1,6 +1,6 @@
 <?php
 
-namespace Tools;
+namespace RichardPQ\OAuth2\Client\Tools;
 
 trait ValidateNativeTypesTrait
 {

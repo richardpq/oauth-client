@@ -1,9 +1,9 @@
 <?php
 
-namespace AuthorizationGrant\Request;
+namespace RichardPQ\OAuth2\Client\Grant\Request;
 
-use Tools\RequiredParametersTrait;
-use Tools\ParameterizedTrait;
+use RichardPQ\OAuth2\Client\Tools\RequiredParametersTrait;
+use RichardPQ\OAuth2\Client\Tools\ParameterizedTrait;
 
 abstract class AbstractGrantRequest
 {

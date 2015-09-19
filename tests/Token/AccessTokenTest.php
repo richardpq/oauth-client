@@ -1,14 +1,14 @@
 <?php
 
-namespace Tests\Token;
+namespace RichardPQ\OAuth2\Client\Tests\Token;
 
-use Token\AccessToken;
+use RichardPQ\OAuth2\Client\Token\AccessToken;
 
 class AccessTokenTest extends \PHPUnit_Framework_TestCase
 {
     public function testAccessTokenExtendFromAbstractToken()
     {
-        $this->assertInstanceOf("Token\\AbstractToken", new AccessToken('abcdedf123456'));
+        $this->assertInstanceOf("RichardPQ\\OAuth2\\Client\\Token\\AbstractToken", new AccessToken('abcdedf123456'));
     }
 
     /**

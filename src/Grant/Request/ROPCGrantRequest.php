@@ -1,8 +1,6 @@
 <?php
 
-namespace AuthorizationGrant\Request;
-
-use AuthorizationGrant\Request\AbstractGrantRequest;
+namespace RichardPQ\OAuth2\Client\Grant\Request;
 
 class ROPCGrantRequest extends AbstractGrantRequest
 {

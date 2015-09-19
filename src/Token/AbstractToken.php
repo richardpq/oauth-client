@@ -1,7 +1,7 @@
 <?php
-namespace Token;
+namespace RichardPQ\OAuth2\Client\Token;
 
-use Tools\ValidateNativeTypesTrait;
+use RichardPQ\OAuth2\Client\Tools\ValidateNativeTypesTrait;
 
 abstract class AbstractToken
 {

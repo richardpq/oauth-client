@@ -1,8 +1,8 @@
 <?php
 
-namespace Token;
+namespace RichardPQ\OAuth2\Client\Token;
 
-use Token\AbstractToken;
+use RichardPQ\OAuth2\Client\Token\AbstractToken;
 
 class RefreshToken extends AbstractToken
 {
